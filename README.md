@@ -270,6 +270,22 @@ The test suite checks:
 
 ---
 
+## 🧪 Library Sanity Check
+
+Using the reproducible MNIST example included in this repository:
+
+| Configuration | Result |
+|---|---:|
+| Dimension | 10,000 |
+| Refinement iterations | 5 |
+| Seed | 42 |
+| Test split | 30% stratified |
+| Accuracy | **95.46%** |
+
+The packaged example uses a fixed deterministic split and seed and is
+intended as a reproducible usage example rather than an exact recreation
+of the paper's experimental split.
+
 ## 📄 Paper
 
 **Deterministic Hyperdimensional Learning with Rank Refinement**  
