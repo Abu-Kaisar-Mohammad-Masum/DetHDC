@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use DetHDC in your research, please cite our AAAI 2026 paper."
+title: "DetHDC"
+type: software
+authors:
+  - family-names: "Masum"
+    given-names: "Abu Kaisar Mohammad"
+  - family-names: "Aygun"
+    given-names: "Sercan"
+version: 0.1.0
+repository-code: "https://github.com/Abu-Kaisar-Mohammad-Masum/DetHDC"
+preferred-citation:
+  type: conference-paper
+  title: "Deterministic Hyperdimensional Learning with Rank Refinement"
+  authors:
+    - family-names: "Masum"
+      given-names: "Abu Kaisar Mohammad"
+    - family-names: "Aygun"
+      given-names: "Sercan"
+  year: 2026
+  conference:
+    name: "AAAI Conference on Artificial Intelligence"
