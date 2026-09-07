@@ -33,34 +33,6 @@ The repository turns the method from our AAAI 2026 paper into a reusable Python 
 
 ---
 
-## 🧠 Method at a Glance
-
-Given an input vector \(x \in \mathbb{R}^{L}\), DetHDC builds two deterministic projection spaces:
-
-\[
-P, V \in \mathbb{R}^{D \times L},
-\]
-
-where \(P\) and \(V\) are generated from scrambled Sobol sequences.
-
-The projected representations are
-
-\[
-h_p = \frac{xP^\top}{\sqrt{L}},
-\qquad
-h_v = \frac{xV^\top}{\sqrt{L}},
-\]
-
-and the final hypervector is obtained through element-wise binding:
-
-\[
-h = \mathrm{norm}(h_p \odot h_v).
-\]
-
-Class prototypes are first constructed by bundling encoded samples. A rank-based refinement stage then updates prototypes when the true class is not sufficiently separated from the strongest competing class.
-
----
-
 ## 🚀 Quick Start
 
 ### Install from source
@@ -320,7 +292,20 @@ If this repository helps your research, please cite our AAAI paper:
 Released under the [MIT License](LICENSE).
 
 ---
+### Iris Benchmark
 
-**Deterministic projections. Lightweight learning. Reproducible HDC.**
+We evaluate DetHDC on the Iris dataset using repeated stratified
+cross-validation (5 folds × 10 repeats, 50 evaluations).
+
+| Metric | Mean ± Std |
+|---|---:|
+| Accuracy | **96.67 ± 2.49%** |
+| Precision (Macro) | **96.98 ± 2.29%** |
+| Recall (Macro) | **96.67 ± 2.49%** |
+| Macro F1 | **96.65 ± 2.51%** |
+
+**Configuration:** D = 5,000, refinement epochs = 5, learning rate = 0.01,
+margin = 0.2, model seed = 42.
+
 
 </div>
