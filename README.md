@@ -321,10 +321,6 @@ Released under the [MIT License](LICENSE).
 
 ---
 
-<div align="center">
-
-### ⭐ If DetHDC is useful for your research, consider starring the repository.
-
 **Deterministic projections. Lightweight learning. Reproducible HDC.**
 
 </div>
